@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Totalizer</title>
+    <style>
+        .item {
+            margin-bottom: 20px;
+        }
+        .total {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Shopping Cart</h1>
+
+    <div class="item">
+        <p>Item 1: $10</p>
+        <input type="number" class="quantity" data-price="10" min="0" value="0">
+    </div>
+
+    <div class="item">
+        <p>Item 2: $20</p>
+        <input type="number" class="quantity" data-price="20" min="0" value="0">
+    </div>
+
+    <div class="item">
+        <p>Item 3: $15</p>
+        <input type="number" class="quantity" data-price="15" min="0" value="0">
+    </div>
+
+    <h2>Total: $<span id="cart-total">0</span></h2>
+
+    <script src="script.js"></script>
+</body>
+</html>
